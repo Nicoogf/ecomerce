@@ -27,9 +27,14 @@ const getProduct = async ()=>{
     <>
       <Hero />
       <div className={ styles.container}>
-        { products.map( (product) => 
+        {  /* products.map( (product) => 
           <CartProduct key={product.tail} product={ product }/>
-        )}
+        ) */ }
+
+        { products.map ( (product) => (
+            <CartProduct key = {product.tail} product={product} />
+        ))}
+
       </div>
      
     </>
